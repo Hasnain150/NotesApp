@@ -34,10 +34,10 @@ createBtn.addEventListener('click',()=>{
   
 })
 function saveDate(){
-    localStorage.setItem("data",notes_Container.innerHTML);
+    localStorage.setItem("NotesData",notes_Container.innerHTML);
 }
 function loadDate(){
-    notes_Container.innerHTML=localStorage.getItem("data");
+    notes_Container.innerHTML=localStorage.getItem("NotesData");
 }
 loadDate();
 document.addEventListener("keydown",(e)=>{
